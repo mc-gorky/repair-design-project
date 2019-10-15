@@ -1,0 +1,124 @@
+.company-title {
+  display: flex;
+  height: 707px;
+  
+  .instagram-container {
+    padding-top: 265px;
+    width: 82px;
+    background-color: $black;
+   
+    .instagram-link {
+      transform: rotate(90deg);
+      display: inline-block;
+      font-family: FuturaDemiC;
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration: none; 
+      color: $maize;
+      white-space: nowrap;
+      text-transform: uppercase;
+  
+        &:after {
+        content: '';
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+        height: 1px;
+        width: 40px;
+        background-color: $maize;
+        }
+    }
+  }
+
+  .title-container {
+    width: calc(100% - 82px);
+    background-image: url(../assets/img/title-background.png);
+    display: flex;
+    align-items: center;
+    
+    .company-description {
+      .company-description-title {
+        width: 600px;
+        height: 105px;
+        margin-left: 60px;
+        margin-bottom: 19px;
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 53px;
+        text-transform: uppercase;
+        color: $white;
+        
+          .company-description-title-colored {
+            color: $maize;
+          }
+      }
+
+      .company-description-text {
+        width: 420px;
+        height: 120px;
+        margin-left: 60px;
+        margin-bottom: 41px;
+        font-family: FuturaBookC;
+        font-size: 22px;
+        line-height: 30px;
+        color: $white;
+      }
+    }
+
+    .cost-button {
+      padding: 20px 40px;
+      margin-left: 60px;
+      margin-right: 20px;
+      background: $maize;
+      font-family: FuturaDemiC;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+      color: $white;
+      border: 1px solid $maize;  
+    }
+
+    .submit-button {
+      padding: 20px 22px;
+      font-family: FuturaDemiC;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+      color: white;
+      background-color: transparent;
+      border: 1px solid $white;      
+    }
+  }
+  
+  .scroll-button {
+    position: absolute;
+    padding: 34px 48px;
+    top: 740px;
+    background-color: $black;
+  
+    .scroll-button-text {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: $white;
+    }
+  
+    .scroll-button-icon {
+      width: 29px;
+      margin-left: 12px;
+    }
+  }
+  
+}
+
+
+@media (max-width: 350px) {
+  .instagram-container, .scroll-button{
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+@import "reset.css";
+@import "fonts.css";
+@import "colors.scss";
+@import "header.scss";
+@import "title.scss";
+
+body {
+  background-color: $grey;
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 350px) {
+  .clients-block {
+    display: none;
+  }
+}

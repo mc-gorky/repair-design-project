@@ -30,6 +30,16 @@ module.exports = {
           publicPath: './assets/img'
         }
       }
+    },{
+      test: /\.(eot|ttf|woff|woff2)$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: './assets/fonts',
+          publicPath: './assets/fonts'
+        }
+      }
     }],
   },
   plugins: [

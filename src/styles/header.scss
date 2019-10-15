@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px 0 82px;
+  align-items: center;
+  height: 83px;
+  background-color: $black;
+  
+  .container-left {
+    display: flex;
+  }
+
+  .site-title {
+  margin-right: 18%;
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $maize;
+  white-space: nowrap;
+  }
+
+  .navbar {
+    white-space: nowrap;
+  }
+
+  .navbar-item {
+  display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 15%;
+    }
+  }
+
+  .navbar-link {
+    font-family: FuturaBookC;
+    font-size: 14px;
+    line-height: 16px;
+    color: $white;
+    text-decoration: none; 
+
+    &:hover {
+      color: $maize;
+    }
+  }
+
+  .phone-link {
+    display: none;
+  }
+
+  .call-button {
+  padding: 13px 33px;
+  font-family: FuturaDemiC;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $maize;
+  }
+
+}
+
